@@ -160,15 +160,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 923893714876022425, guid: ead035a147c4a6d408c59ab1b75e99da, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.0483856
+      value: -5.33
       objectReference: {fileID: 0}
     - target: {fileID: 923893714876022425, guid: ead035a147c4a6d408c59ab1b75e99da, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 82.8497
+      value: 81.81
       objectReference: {fileID: 0}
     - target: {fileID: 923893714876022425, guid: ead035a147c4a6d408c59ab1b75e99da, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -130.1362
+      value: -129.51
       objectReference: {fileID: 0}
     - target: {fileID: 923893714876022425, guid: ead035a147c4a6d408c59ab1b75e99da, type: 3}
       propertyPath: m_LocalRotation.w
@@ -201,6 +201,10 @@ PrefabInstance:
     - target: {fileID: 923893714876022436, guid: ead035a147c4a6d408c59ab1b75e99da, type: 3}
       propertyPath: m_Name
       value: Jump
+      objectReference: {fileID: 0}
+    - target: {fileID: 923893714876022436, guid: ead035a147c4a6d408c59ab1b75e99da, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 923893714876022437, guid: ead035a147c4a6d408c59ab1b75e99da, type: 3}
       propertyPath: m_Mesh
@@ -369,6 +373,10 @@ PrefabInstance:
     - target: {fileID: 2693573932408249071, guid: 11ad6071766f6d5428a83259fef12ec1, type: 3}
       propertyPath: m_Name
       value: Slope
+      objectReference: {fileID: 0}
+    - target: {fileID: 2693573932408249071, guid: 11ad6071766f6d5428a83259fef12ec1, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1017,7 +1025,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad8ee464a35457641949420f851e85b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  leftInput: 276
+  rightInput: 275
   acceleration: 100
+  turnSpeed: 100
+  minSpeed: 0
+  maxSpeed: 500
+  minAcceleration: -100
+  maxAcceleration: 500
+  groundLayers:
+    serializedVersion: 2
+    m_Bits: 8
+  groundTransform: {fileID: 1571616421}
 --- !u!4 &760035462 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9037381300153515870, guid: 006db0bb6c947394c988fe7797f8bb38, type: 3}
@@ -2464,6 +2483,11 @@ Mesh:
 Transform:
   m_CorrespondingSourceObject: {fileID: 9117953069100586070, guid: 3d3a741bcdb7b8c4a84f8beb3ae4d7e9, type: 3}
   m_PrefabInstance: {fileID: 881884485}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1571616421 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4335157640701538008, guid: 079d8e1325f92924690275cc28f21b1b, type: 3}
+  m_PrefabInstance: {fileID: 595372198}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1613413829
 PrefabInstance:

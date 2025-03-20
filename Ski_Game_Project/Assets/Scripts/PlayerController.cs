@@ -37,8 +37,8 @@ public class PlayerController : MonoBehaviour
     private float Remap(float oldMin, float oldMax, float newMin, float newMax, float oldValue)
     {
         float oldRange = (oldMax - oldMin);
-        float minRange = (newMax - newMin);
-        float maxValue = (((oldValue - oldMin) / oldRange) * newRange + newMin);
+        float newRange = (newMax - newMin);
+        float newValue = (((oldValue - oldMin) / oldRange) * newRange + newMin);
         return newValue;
     }
 
